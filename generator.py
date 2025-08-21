@@ -1,9 +1,9 @@
 import os
 
 # Paths
-SOURCE_DIR = "songs-text"
-OUTPUT_DIR = "."
-SONGS_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "songs-html")
+SOURCE_DIR = "songs-text"              # folder with your .txt files
+OUTPUT_DIR = "."                        # root of repo for GitHub Pages
+SONGS_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "songs-html")  # folder for generated HTML
 
 # HTML templates
 PAGE_TEMPLATE = """<!DOCTYPE html>
@@ -30,10 +30,16 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
       font-size: 20px;
     }}
     a {{
-      display: inline-block;
-      margin-bottom: 1rem;
       color: #0066cc;
       text-decoration: none;
+    }}
+    a:hover {{
+      text-decoration: underline;
+    }}
+    .back-link {{
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-size: 20px;
     }}
     h1 {{
       font-size: 28px;
@@ -42,7 +48,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   </style>
 </head>
 <body>
-  <a href="../index.html">&larr; Back to Song List</a>
+  <a class="back-link" href="../index.html">&larr; Back to Song List</a>
   <h1>{title}</h1>
   <pre>{lyrics}</pre>
 </body>
@@ -88,9 +94,9 @@ def generate_site():
     # Make output dirs
     os.makedirs(SONGS_OUTPUT_DIR, exist_ok=True)
 
-    links = []
+    song_links = []
 
-    for filename in sorted(os.listdir(SOURCE_DIR)):
+    for filename in os.listdir(SOURCE_DIR):
         if filename.endswith(".txt"):
             filepath = os.path.join(SOURCE_DIR, filename)
             with open(filepath, "r", encoding="utf-8") as f:
@@ -101,7 +107,8 @@ def generate_site():
             content_start = 0
             for i, line in enumerate(lines):
                 if line.strip():   # line not empty
-                    title = line.strip().title()  # capitalize nicely
+                    # title = line.strip().title()  # capitalize nicely
+                    title = line.strip()
                     content_start = i + 1
                     break
 
@@ -109,20 +116,26 @@ def generate_site():
             lyrics_lines = [line for line in lines[content_start:] if line.strip() or line == "\n"]
             lyrics = "".join(lyrics_lines).strip()
 
-            # Generate HTML
-            song_html = PAGE_TEMPLATE.format(title=title, lyrics=lyrics)
-
+            # Generate HTML file
             output_filename = os.path.splitext(filename)[0] + ".html"
             output_path = os.path.join(SONGS_OUTPUT_DIR, output_filename)
             with open(output_path, "w", encoding="utf-8") as f:
-                f.write(song_html)
+                f.write(PAGE_TEMPLATE.format(title=title, lyrics=lyrics))
 
-            links.append(f'<li><a href="songs-html/{output_filename}">{title}</a></li>')
+            # Save title and file for sorting
+            song_links.append((title, output_filename))
 
-    # Write index.html **after all songs are processed**
-    index_html = INDEX_TEMPLATE.format(links="\n    ".join(links))
+    # Sort links alphabetically by title
+    song_links.sort(key=lambda x: x[0])
+
+    links_html = "\n    ".join(
+        f'<li><a href="songs-html/{filename}">{title}</a></li>' 
+        for title, filename in song_links
+    )
+
+    # Write index.html in repo root
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(index_html)
+        f.write(INDEX_TEMPLATE.format(links=links_html))
 
     print("Site generated in", OUTPUT_DIR)
 
