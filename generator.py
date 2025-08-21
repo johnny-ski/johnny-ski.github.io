@@ -1,9 +1,9 @@
 import os
 
 # Paths
-SOURCE_DIR = "songs"
-OUTPUT_DIR = "site"
-SONGS_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "songs")
+SOURCE_DIR = "songs-text"
+OUTPUT_DIR = "."
+SONGS_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "songs-html")
 
 # HTML templates
 PAGE_TEMPLATE = """<!DOCTYPE html>
@@ -94,9 +94,22 @@ def generate_site():
         if filename.endswith(".txt"):
             filepath = os.path.join(SOURCE_DIR, filename)
             with open(filepath, "r", encoding="utf-8") as f:
-                lyrics = f.read()
+                lines = f.readlines()
 
-            title = os.path.splitext(filename)[0].replace("_", " ").title()
+            # First non-empty line = title
+            title = ""
+            content_start = 0
+            for i, line in enumerate(lines):
+                if line.strip():   # line not empty
+                    title = line.strip().title()  # capitalize nicely
+                    content_start = i + 1
+                    break
+
+            # Skip blank lines after title
+            lyrics_lines = [line for line in lines[content_start:] if line.strip() or line == "\n"]
+            lyrics = "".join(lyrics_lines).strip()
+
+            # Generate HTML
             song_html = PAGE_TEMPLATE.format(title=title, lyrics=lyrics)
 
             output_filename = os.path.splitext(filename)[0] + ".html"
@@ -104,8 +117,9 @@ def generate_site():
             with open(output_path, "w", encoding="utf-8") as f:
                 f.write(song_html)
 
-            links.append(f'<li><a href="songs/{output_filename}">{title}</a></li>')
+            links.append(f'<li><a href="songs-html/{output_filename}">{title}</a></li>')
 
+    # Write index.html **after all songs are processed**
     index_html = INDEX_TEMPLATE.format(links="\n    ".join(links))
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
