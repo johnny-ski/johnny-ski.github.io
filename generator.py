@@ -62,15 +62,25 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   <title>Song List</title>
   <style>
     body {{
-      font-family: sans-serif;
+      font-family: monospace;
+      background: #fdfdfd;
       max-width: 700px;
       margin: 2rem auto;
       padding: 1rem;
-      line-height: 1.8;
+      line-height: 1.6;
+      color: #333;
       font-size: 20px;
     }}
     h1 {{
       font-size: 28px;
+      margin-bottom: 1rem;
+    }}
+    ul {{
+      list-style-type: none;
+      padding-left: 0;
+    }}
+    li {{
+      margin-bottom: 0.5rem;
     }}
     a {{
       color: #0066cc;
