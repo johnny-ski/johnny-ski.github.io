@@ -96,6 +96,9 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   <ul>
     {links}
   </ul>
+
+  <!-- <img src="images/AJ.png" style="max-width:100%; height:auto; border-radius:12px;"> -->
+
 </body>
 </html>
 """
