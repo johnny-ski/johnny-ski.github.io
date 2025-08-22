@@ -138,15 +138,20 @@ def generate_site():
             lyrics_lines = [line for line in lines[content_start:] if line.strip() or line == "\n"]
             lyrics = "".join(lyrics_lines).strip()
 
-            # If YouTube link present, append as pretty link inside lyrics
+            # If YouTube link present, add hyperlink
+            youtube_link_html = ""
             if youtube_url:
-                lyrics += f'\n\n🎵 <a href="{youtube_url}" target="_blank">Watch on YouTube</a>'
+                youtube_link_html = f"""
+                <p style="margin-top:2rem; font-size:20px;">
+                  🎵 <a href="{youtube_url}" target="_blank">Watch on YouTube</a>
+                </p>
+                """
 
             # Generate HTML file
             output_filename = os.path.splitext(filename)[0] + ".html"
             output_path = os.path.join(SONGS_OUTPUT_DIR, output_filename)
             with open(output_path, "w", encoding="utf-8") as f:
-                f.write(PAGE_TEMPLATE.format(title=title, lyrics=lyrics))
+                f.write(PAGE_TEMPLATE.format(title=title, lyrics=lyrics + youtube_link_html))
 
             # Save title and file for sorting
             song_links.append((title, output_filename))
