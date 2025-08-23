@@ -135,8 +135,13 @@ def generate_site():
                     break
 
             # Collect lyrics
-            lyrics_lines = [line for line in lines[content_start:] if line.strip() or line == "\n"]
+            # lyrics_lines = [line for line in lines[content_start:] if line.strip() or line == "\n"]
+            lyrics_lines = lines[content_start:]
             lyrics = "".join(lyrics_lines).strip()
+
+
+
+            
 
             # If YouTube link present, append as pretty link inside lyrics
             if youtube_url:
