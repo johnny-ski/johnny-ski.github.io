@@ -92,7 +92,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   </style>
 </head>
 <body>
-  <h1>Song List for NIST Friday Jam:</h1>
+  <h1>Song List for NIST Friday Jam</h1>
   <ul>
     {links}
   </ul>
