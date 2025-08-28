@@ -159,10 +159,13 @@ def generate_site():
     # Sort links alphabetically by title
     song_links.sort(key=lambda x: x[0])
 
+    # Optional: add hearts around a specific song title
     links_html = "\n    ".join(
-        f'<li><a href="songs-html/{filename}">{title}</a></li>' 
+        f'<li><a href="songs-html/{filename}">{"❤️❤️❤️ " + title + " ❤️❤️❤️" if title=="Love Story – Taylor Swift" else title}</a></li>'
         for title, filename in song_links
     )
+
+
 
     # Write index.html in repo root
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
