@@ -161,7 +161,7 @@ def generate_site():
 
     # Optional: add hearts around a specific song title
     links_html = "\n    ".join(
-        f'<li><a href="songs-html/{filename}">{"❤️❤️❤️ " + title + " ❤️❤️❤️" if title=="Love Story – Taylor Swift" else title}</a></li>'
+        f'<li><a href="songs-html/{filename}">{"❤️❤️❤️ " + title + " ❤️❤️❤️" if "Love Story" in title else title}</a></li>'
         for title, filename in song_links
     )
 
