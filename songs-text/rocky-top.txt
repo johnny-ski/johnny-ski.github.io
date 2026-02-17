@@ -1,15 +1,18 @@
 Rocky Top – Osborne Brothers
 
-Intro:
+Intro (4 bars):
 G C/G Em/D G
 
-Verse:
+Verse (8 bars):
 G C/G Em/D G (2x)
 
-Chorus:
+Chorus (10 bars):
 Em D F C
 C G G/F G
 G/F G
+
+Outro (6 bars):
+G/F G F C G G ...then banjo lick
 
 Wish that I was on ol' Rocky Top
 Down in the Tennessee hills
@@ -24,8 +27,7 @@ I still dream about that
   Rocky Top, you'll always be
   Home sweet home to me
   Good ol' Rocky Top
-  Rocky Top, Tennessee
-  Rocky Top, Tennessee
+  Rocky Top, Tennessee (2X)
 
 Once two strangers climbed ol' Rocky Top
 Looking for a moonshine still
@@ -39,6 +41,8 @@ Get their corn from a jar
 
   Chorus
 
+Break (verse > chorus)
+
 I've had years of cramped up city life
 Trapped like a duck in a pen
 All I know is it's a pity life
@@ -47,6 +51,10 @@ Can't be simple again
   Chorus
 
 Performance notes:
-Original key is B, with guitar and banjo in 4th gear
+Original key is B, with guitar and banjo in 4th gear.
+Original arrangement has adds an extra two beats before V1, V3, and V5
+On the break, during the mandolin part, accent beats 1 and 3 of third bar, then accent beats 1, 2, and 3 of the next bar.
+
+Go Vols!
 
 https://www.youtube.com/watch?v=AgPITdW3lRA
