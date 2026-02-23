@@ -92,7 +92,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   </style>
 </head>
 <body>
-  <h1>Song List for NIST Friday Jam</h1>
+  <h1>Song List for NIST Friday Jam:</h1>
   <ul>
     {links}
   </ul>
@@ -139,10 +139,6 @@ def generate_site():
             lyrics_lines = lines[content_start:]
             lyrics = "".join(lyrics_lines).strip()
 
-
-
-            
-
             # If YouTube link present, append as pretty link inside lyrics
             if youtube_url:
                 lyrics += f'\n\n🎵 <a href="{youtube_url}" target="_blank">Watch on YouTube</a>'
@@ -176,7 +172,7 @@ def generate_site():
     resource_links_html = ""
     if resources:
         resource_links_html = """
-    <h2>Other Resources</h2>
+    <h2>Other stuff:</h2>
     <ul>
     {}
     </ul>
