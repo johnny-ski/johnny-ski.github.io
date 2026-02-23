@@ -165,12 +165,29 @@ def generate_site():
         for title, filename in song_links
     )
 
+    # ---- Other Resources Section ----
+    resources = [
+        ("Bluegrass 101 Song Book", "/pdf/bluegrass-101-song-book.pdf"),
+        # Add more PDFs here later
+    ]
 
+    resource_links_html = ""
+    if resources:
+        resource_links_html = """
+    <h2>Other Resources</h2>
+    <ul>
+    {}
+    </ul>
+    """.format("\n".join(
+            f'  <li><a href="{url}" target="_blank">{title}</a></li>'
+            for title, url in resources
+        ))
 
     # Write index.html in repo root
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(INDEX_TEMPLATE.format(links=links_html))
-
+        f.write(INDEX_TEMPLATE.format(
+            links=links_html
+        ) + resource_links_html)
     print("Site generated in", OUTPUT_DIR)
 
 if __name__ == "__main__":
