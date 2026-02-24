@@ -165,6 +165,7 @@ def generate_site():
     resources = [
         ("Bluegrass 101 Song Book", "/pdf/bluegrass-101-song-book.pdf"),
         ("The Beatles Complete Songbook", "/pdf/beatles-complete-songbook.pdf"),
+        ("The Real Book", "/pdf/the-real-book-5.pdf"),
         ("The Ultimate Pop Rock Fake Book", "/pdf/ultimate-pop-rock-fake-book.pdf")
         # Add more PDFs here later
     ]
