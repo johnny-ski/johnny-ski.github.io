@@ -1,5 +1,10 @@
 Will You Miss Me – Stanley Brothers
 
+1 1 1 1
+4 4 1 1
+1 1 1 1
+5 5 5 1
+
 When these lips shall never more
 Place a kiss upon thy brow
 But lie cold and still in death
@@ -15,3 +20,4 @@ On my poor unworthy grave
 Come and sit along beside me
 When the roses nod and wave
 
+Note: add an extra bar to end of each line over the chorus
