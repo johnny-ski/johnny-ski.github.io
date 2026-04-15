@@ -1,22 +1,11 @@
 Ob-La-Di, Ob-La-Da – The Beatles
 
-Intro:
-5 1 1 1 1
+Verse:       Chorus:         Bridge:
+1 5 5 1      1 5/6m 1/5 1    4 4 1 1
+1 4 1/5 1    1 5/6m 1/5 1    4 4 5 5
 
-Verse:
-1 5 5 1
-1 4 1/5 1
-
-Chorus:
-1 5/6m 1/5 1
-1 5/6m 1/5 1
-
-Bridge:
-4 4 1 1
-4 4 5 5
-
-Outro:
-6m 5/1
+Intro:       Outro:
+5 1 1 1 1    6m 5/1
 
 V1:
 Desmond has a barrow in the market place, 
@@ -50,4 +39,4 @@ Molly lets the children lend a hand
 Desmond stays at home and does his pretty face
 And in the evening she's a singer with the band
 
-Notes: Album key is Bb. Form is V1>Ch>V2>Ch>Br>V3>Ch>Br>V4>Ch. The last time through on the chorus, play the 6m for the last chord (in place of the 1) to lead in to the outro
+Notes: Album key is Bb. Form is V1>Ch>V2>Ch>Br>V3>Ch>Br>V4>Ch. The last time through on the chorus, play the 6m for the last chord (in place of the 1) to lead in to the outro.
