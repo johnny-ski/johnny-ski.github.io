@@ -1,11 +1,11 @@
 Ob-La-Di, Ob-La-Da – The Beatles
 
 Verse:       Chorus:         Bridge:
-G D D G      G D/Em G/D G    C C G G
-G C G/D G    G D/Em G/D G    C C D D
+1 5 5 1      1 5/6m 1/5 1    4 4 1 1
+1 4 1/5 1    1 5/6m 1/5 1    4 4 5 5
 
 Intro:       Outro:
-D G G G G    Em D/G
+5 1 1 1 1    6m 5/1
 
 V1:
 Desmond has a barrow in the market place, 
