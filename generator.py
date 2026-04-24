@@ -137,17 +137,19 @@ def generate_site():
                     content_start = i + 1
                     break
 
-            # Check for IMAGE line
+            # Robust IMAGE detection
             image_url = ""
-            if content_start < len(lines) and lines[content_start].startswith("IMAGE:"):
-                image_url = lines[content_start].replace("IMAGE:", "").strip()
-                content_start += 1
+            if content_start < len(lines):
+                line = lines[content_start].strip()
+                if line.upper().startswith("IMAGE:"):
+                    image_url = line.split(":", 1)[1].strip()
+                    content_start += 1
 
             # Collect lyrics (preserve spacing)
             lyrics_lines = lines[content_start:]
             lyrics = "".join(lyrics_lines).strip()
 
-            # Append YouTube link inside lyrics block
+            # Append YouTube link inside lyrics
             if youtube_url:
                 lyrics += f'\n\n🎵 <a href="{youtube_url}" target="_blank">Watch on YouTube</a>'
 
@@ -172,13 +174,13 @@ def generate_site():
     # Sort alphabetically
     song_links.sort(key=lambda x: x[0])
 
-    # Optional hearts for Love Story
+    # Add hearts for Love Story
     links_html = "\n    ".join(
         f'<li><a href="songs-html/{filename}">{"❤️❤️❤️ " + title + " ❤️❤️❤️" if "Love Story" in title else title}</a></li>'
         for title, filename in song_links
     )
 
-    # Write index
+    # Write index.html
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(INDEX_TEMPLATE.format(links=links_html))
 
