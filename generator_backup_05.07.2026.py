@@ -180,27 +180,6 @@ def generate_site():
         for title, filename in song_links
     )
 
-    # ---- Other Resources Section ----
-    resources = [
-        ("Bluegrass 101 Song Book", "/pdf/bluegrass-101-song-book.pdf"),
-        ("The Beatles Complete Songbook", "/pdf/beatles-complete-songbook.pdf"),
-        ("The Real Book", "/pdf/the-real-book-5.pdf"),
-        ("The Ultimate Pop Rock Fake Book", "/pdf/ultimate-pop-rock-fake-book.pdf")
-        # Add more PDFs here later
-    ]
-
-    resource_links_html = ""
-    if resources:
-        resource_links_html = """
-    <h2>Other stuff:</h2>
-    <ul>
-    {}
-    </ul>
-    """.format("\n".join(
-            f'  <li><a href="{url}" target="_blank">{title}</a></li>'
-            for title, url in resources
-        ))
-
     # Write index.html
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(INDEX_TEMPLATE.format(links=links_html))
