@@ -103,6 +103,9 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   <ul>
     {links}
   </ul>
+
+  {resource_links}
+
 </body>
 </html>
 """
@@ -203,7 +206,7 @@ def generate_site():
 
     # Write index.html
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(INDEX_TEMPLATE.format(links=links_html))
+        f.write(INDEX_TEMPLATE.format(links=links_html, resource_links=resource_links_html))
 
     print("Site generated in", OUTPUT_DIR)
 
