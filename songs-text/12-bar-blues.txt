@@ -1,21 +1,23 @@
 12-bar blues – Various
 
-Johnny B. Goode, etc.
-1 1 1 1
-4 4 1 1
-5 5 1 1
+Johnny B. Goode, No Particular Place To Go, etc.
+ 1 1 1 1
+ 4 4 1 1
+ 5 5 1 1
 
 Further On Up The Road, etc.
-1 1 1 1
-4 4 1 1
-5 4 1 1
+ 1 1 1 1
+ 4 4 1 1
+ 5 4 1 1
 
 Sweet Home Chicago, etc.
-1 4 1 1
-4 4 1 1
-5 4 1 5
+ 1 4 1 1
+ 4 4 1 1
+ 5 4 1 5
 
 Dust My Broom, Crossroads, etc.
-1 4 1 1
-4 4 1 1
-5 4 1 1
+ 1 4 1 1
+ 4 4 1 1
+ 5 4 1 1
+
+Note: These general forms are often modified by repeating a section, repeating a bar, skipping a bar, or whatever so that the result is a 13-bar pattern, etc. Some songs will even change up the patterns from verse to chorus to instrumental break. Considering all the variations, there are countless songs that are based on the 12-bar blues.
