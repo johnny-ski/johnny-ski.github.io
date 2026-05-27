@@ -12,8 +12,8 @@ Guitar: treble string lick
 Banjo: response
 Guitar: repeat treble string lick
 Banjo: response
-Guitar: Yankee doodle)
-Banjo: resolve
+Guitar: Yankee doodle went to town
+Banjo: riding on a pony
 
 Section B (play through twice):
 
@@ -35,7 +35,7 @@ Guitar: treble string lick
 Banjo: response
 Guitar: treble string lick
 Banjo: response (this is omitted in the YT instructional, maybe on accident?)
-Guitar: Full yankee doodle lick (along with banjo), then bass run up to C chord
+Guitar (and banjo): Yankee doodle went to town, riding on a pony...then bass run up to C for rhythm guitar part
 Guitar rhythm part:
  C C G G
  D D G G
@@ -48,3 +48,5 @@ NC (4 bars)
 G G A/D G
 
 https://www.youtube.com/watch?v=MlTEMxzj0WI
+
+Note: in some arrangements, the 16-bar guitar rhythm part in section B is repeated immediately on the second time through the section.
