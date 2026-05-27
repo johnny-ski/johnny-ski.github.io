@@ -186,6 +186,7 @@ def generate_site():
     # ---- Other Resources Section ----
     resources = [
         ("Bluegrass 101 Song Book", "/pdf/bluegrass-101-song-book.pdf"),
+        ("SEBA Introduction to Bluegrass Jamming", "Barnwell_SEBA_article.html"),
         ("The Beatles Complete Songbook", "/pdf/beatles-complete-songbook.pdf"),
         ("The Real Book", "/pdf/the-real-book-5.pdf"),
         ("The Ultimate Pop Rock Fake Book", "/pdf/ultimate-pop-rock-fake-book.pdf")
