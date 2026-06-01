@@ -1,13 +1,9 @@
 Don't Think Twice, It's Alright – Bob Dylan
 
-1 5 6m 6m
-4 4 1 5
-1 5 6m 6m
-2 2 5 5
-1 1 1 1
-4 4 2 2
-1 5 6m 4
-1 5 1 1
+1/5  6m    4    1/5
+1/5  6m    2    5
+1    1     4    2
+1/5  6m/4  1/5  1
 
 Well, it ain't no use to sit and wonder why, babe
 If'n you don't know by now
