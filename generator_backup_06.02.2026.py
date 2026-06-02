@@ -174,13 +174,6 @@ def generate_site():
 
             song_links.append((title, output_filename))
 
-    manual_pages = [
-        ("Dueling Banjos – Instrumental", "dueling-banjos.html"),
-    ]
-
-    for title, filename in manual_pages:
-        song_links.append((title, filename))
-
     # Sort alphabetically
     song_links.sort(key=lambda x: x[0])
 

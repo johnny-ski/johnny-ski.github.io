@@ -1,13 +1,18 @@
 Dueling Banjos – Instrumental
 
+This is the standard arrangement. Elaborate, extend, repeat sections, etc. as necessary.
+
 Section A (play through one time):
 
+Slow introduction
 Guitar: slowly play 5 note G-chord, one note at a time
 Banjo: response
 Guitar: strum G-C-G
 Banjo: response
 Guitar: repeat strum G-C-G
 Banjo: response
+
+Call and response
 Guitar: treble string lick
 Banjo: response
 Guitar: repeat treble string lick
@@ -17,25 +22,27 @@ Banjo: riding on a pony
 
 Section B (play through twice):
 
-Guitar: bass string G chord lick
+Guitar: G chord bass run
 Banjo: response
-Guitar: bass string G chord lick
+Guitar: G chord bass run
 Banjo: response
-Guitar: bass string C chord lick
+Guitar: C chord bass run
 Banjo: response
-Guitar: bass string G chord lick
+Guitar: G chord bass run
 Banjo: response
-Guitar: bass string D chord lick
+Guitar: D chord bass run
 Banjo: response
 Guitar: strum G-C-G
 Banjo: response
 Guitar: repeat strum G-C-G
 Banjo: response
-Guitar: treble string lick
+
+Tempo picks up here...
+Guitar: treble string run
 Banjo: response
-Guitar: treble string lick
+Guitar: treble string run
 Banjo: response (this is omitted in the YT instructional, maybe on accident?)
-Guitar (and banjo): Yankee doodle went to town, riding on a pony...then bass run up to C for rhythm guitar part
+Guitar (and banjo together): Yankee doodle went to town, riding on a pony...then bass run up to C chord for rhythm guitar part
 Guitar rhythm part:
  C C G G
  D D G G
@@ -48,5 +55,6 @@ NC (4 bars)
 G G A/D G
 
 https://www.youtube.com/watch?v=MlTEMxzj0WI
+https://www.youtube.com/watch?v=4MdQVFqok3s
 
-Note: in some arrangements, the 16-bar guitar rhythm part in section B is repeated immediately on the second time through the section.
+Note: in some arrangements, the 16-bar guitar rhythm part in section B is repeated immediately on the second time through the section. Also, the first time through the B section, it starts at the slow tempo of the introductory section before picking up speed. The next time(s) through the B section, it is played up to full speed the whole way.
