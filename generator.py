@@ -176,6 +176,7 @@ def generate_site():
 
     manual_pages = [
         ("Dueling Banjos – Instrumental", "dueling-banjos.html"),
+        ("Jackson – Johnny Cash & June Carter", "jackson-v2.html"),
     ]
 
     for title, filename in manual_pages:
