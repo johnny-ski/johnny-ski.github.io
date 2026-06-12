@@ -193,6 +193,7 @@ def generate_site():
 
     # ---- Other Resources Section ----
     resources = [
+        ("Blues Real Book", "/pdf/blues-real-book.pdf"),
         ("Bluegrass 101 Song Book", "/pdf/bluegrass-101-song-book.pdf"),
         ("SEBA Introduction to Bluegrass Jamming", "Barnwell_SEBA_article.html"),
         ("The Beatles Complete Songbook", "/pdf/beatles-complete-songbook.pdf"),
