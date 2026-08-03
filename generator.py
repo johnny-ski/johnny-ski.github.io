@@ -198,7 +198,8 @@ def generate_site():
         ("SEBA Introduction to Bluegrass Jamming", "Barnwell_SEBA_article.html"),
         ("The Beatles Complete Songbook", "/pdf/beatles-complete-songbook.pdf"),
         ("The Real Book", "/pdf/the-real-book-5.pdf"),
-        ("The Ultimate Pop Rock Fake Book", "/pdf/ultimate-pop-rock-fake-book.pdf")
+        ("The Ultimate Pop Rock Fake Book - Volume I", "/pdf/ultimate-pop-rock-fake-book-i.pdf"),
+        ("The Ultimate Pop Rock Fake Book - Volume II", "/pdf/ultimate-pop-rock-fake-book-ii.pdf")
         # Add more PDFs here later
     ]
 
