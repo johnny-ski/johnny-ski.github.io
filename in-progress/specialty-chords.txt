@@ -13,3 +13,5 @@ x x 1 2 1 2   Impending doom
 
 x 6 6 7 7 7   James Brown E9
 x 6 6 7 7 9   James Brown E13
+
+The strumming pattern for the En Vogue chord can be considered as two bars of eighth notes. In the first bar, the accents come on the 1st downbeat, the second upbeat, and the 4th downbeat. In the second bar, the accents come on the 1sr downbeat and the 2nd upbeat. All other eighth notes are just muted strums for a percussive effect.
